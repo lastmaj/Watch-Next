@@ -5,20 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What'ch Next ? What you gonna watch next!</title>
     <link rel="stylesheet" href="style.css">
-  
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/4b26eef909.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav>
-      <div class="logo" id="header">Logo here</div>
+    <nav class="navbar-fixed">
+        <a class="brand" href="#">
+          <img src="logo.png" alt="logo"/>
+        </a>
       <ul class="horizontal-list">
-        <li>Dropdown categories</li>
-        <li>To watch</li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Watchlist</a></li>
       </ul>
-      <div id="searchbar"> searchbar here </div>
+      <div id="search-modal" class="closed">
+        <input type="text"/>   
+      </div>
+      <div id="searchbar"> 
+        <span class="fa-icon">
+          <i id="search" class="fas fa-search"></i>
+        </span>
+      </div>
     </nav>
 
-    <section>Items here
+    <section>
+      <div class="filter-container">
+        <div id="categories" class="dropdown closed">
+          <p>Categories <span>^</span></p>
+              <ul class="menu">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Animation</a></li>
+                <li><a href="#">Comedy</Command></a></li>
+                <li><a href="#">Crime</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Fantasy</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Mystery</a></li>
+                <li><a href="#">Romance</a></li>
+                <li><a href="#">Science Fiction</a></li>
+                <li><a href="#">Thriller</a></li>
+                <li><a href="#">War</a></li>
+                <li><a href="#">Western</a></li>
+              </ul>    
+        </div>
+    </div>
       <div class="cards-container">
+        <div class="card">
+          <a class="card-board">
+            <img class="card-thumb" src="https://img.vxdn.net/p-max/200/Brave-New-World-1-101133.jpg"/>
+          </a>
+        </div>
+        <div class="card">
+          <a class="card-board">
+            <img class="card-thumb" src="https://img.vxdn.net/p-max/200/the-outpost-season-3-101545.jpg""/>
+          </a>
+        </div>
+        <div class="card">
+          <a class="card-board">
+            <img class="card-thumb" src="https://img.vxdn.net/p-max/200/Brave-New-World-1-101133.jpg"/>
+          </a>
+        </div>
+        <div class="card">
+          <a class="card-board">
+            <img class="card-thumb" src="https://img.vxdn.net/p-max/200/Brave-New-World-1-101133.jpg"/>
+          </a>
+        </div>
+        <div class="card">
+          <a class="card-board">
+            <img class="card-thumb" src="https://img.vxdn.net/p-max/200/Brave-New-World-1-101133.jpg"/>
+          </a>
+        </div>
+        <div class="card">
+          <a class="card-board">
+            <img class="card-thumb" src="https://img.vxdn.net/p-max/200/Brave-New-World-1-101133.jpg"/>
+          </a>
+        </div>
+        <div class="card">
+          <a class="card-board">
+            <img class="card-thumb" src="https://img.vxdn.net/p-max/200/Brave-New-World-1-101133.jpg"/>
+          </a>
+        </div>
+        <div class="card">
+          <a class="card-board">
+            <img class="card-thumb" src="https://img.vxdn.net/p-max/200/Brave-New-World-1-101133.jpg"/>
+          </a>
+        </div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
         <div class="card">card</div>
         <div class="card">card</div>
         <div class="card">card</div>
@@ -31,5 +125,7 @@
       </div>
     </section>
     <footer>Footer here</footer>
+    <!-- Custom Script-->
+    <script src="script.js" crossorigin="use-credentials"></script>
   </body>
 </html>
