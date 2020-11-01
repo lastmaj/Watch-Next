@@ -35,7 +35,7 @@ var checkScroll = function () {
   if (curScroll > prevScroll) {
     //scrolled up
     direction = 2;
-  } else if (curScroll < prevScroll) {
+  } else if (30 < prevScroll - curScroll) {
     //scrolled down
     direction = 1;
   }
@@ -48,9 +48,7 @@ var checkScroll = function () {
 };
 
 var toggleHeader = function (direction, curScroll) {
-  if (direction === 2 && curScroll > 65) {
-    //replace 52 with the height of your header in px
-
+  if (direction === 2 && curScroll > 180) {
     header.classList.add('hide');
     prevDirection = direction;
   } else if (direction === 1) {
@@ -60,3 +58,16 @@ var toggleHeader = function (direction, curScroll) {
 };
 
 window.addEventListener('scroll', checkScroll);
+
+
+// search bar event listener 
+const navSearchButton = document.querySelector('#nav-search-button');
+const searchBar = document.querySelector('#search-bar');
+
+navSearchButton.addEventListener('click', (e) => {
+  if (searchBar.classList.contains('hidden')) {
+    searchBar.classList.remove('hidden');
+  }
+  else searchBar.classList.add('hidden');
+})
+

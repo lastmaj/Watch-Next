@@ -66,15 +66,50 @@ nav .horizontal-list li {
   font-weight: 800;
 }
 
-#searchbar {
-  margin-right: 15px;
+#nav-search-button {
+  cursor: pointer;
   margin-left: auto;
+  margin-right: 1rem;
 }
 
-#searchbar span {
+#search-bar {
+  width: 70%;
+  margin: 0.7rem auto;
+}
+
+#search-bar.hidden {
+  display: none;
+}
+
+#search-bar form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #fc7e1d85;
+}
+
+#search-bar input {
+  flex-grow: 2;
+  padding: .3rem;
+  border: none;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 400;
+}
+
+#search-bar input:focus {
+  outline: none;
+
+}
+
+#search-bar button {
+  border: none;
   cursor: pointer;
-  width: 3rem;
-  font-size: 1.3rem;
+  background-color: transparent;
+  color: var(--orange)
+}
+
+#search-bar button {
+  outline: none;
 }
 
 .filter-container {
